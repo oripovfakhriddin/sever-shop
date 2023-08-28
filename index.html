@@ -1,20 +1,829 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" <link rel="stylesheet"
+        href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <title>Template style</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <header></header>
-        <main></main>
+        <header id="header">
+            <div class="container header__container">
+
+                <div class="header__logo-box">
+                    <a href="#">
+                        <picture>
+                            <source media="(max-width:1000px)" srcset="./assets/img/static-icon/site-logo-tablet.svg">
+                            <img src="./assets/img/static-icon/site-logo.svg" alt="Site Logo">
+                        </picture>
+                    </a>
+                </div>
+
+                <div class="header__button-box">
+                    <button class="header__button" type="submit">
+                        <img src="./assets/img/static-icon/menu-logo.svg" alt="menu-logo">
+                        <p>Каталог</p>
+                    </button>
+                </div>
+
+                <div class="header__search-box">
+                    <form class="header__search-form">
+                        <input class="header__search" type="text" placeholder="Найти товар">
+                        <img src="./assets/img/static-icon/search-logo.svg" alt="Search Icon">
+                    </form>
+                </div>
+
+                <div class="header__navigation">
+                    <div class="header__heart-box">
+                        <div class="heart__icon-box">
+                            <img src="./assets/img/static-icon/heart-logo.svg" alt="Heart Icon">
+                        </div>
+                        <p>Избранное</p>
+                    </div>
+
+                    <div class="header__box-box">
+                        <div class="box__icon-box">
+                            <img src="./assets/img/static-icon/box-logo.svg" alt="Box Icon">
+                        </div>
+                        <p>продукты</p>
+                    </div>
+
+                    <div class="header__korzinka-box">
+                        <div class="korzinka__icon-box">
+                            <img src="./assets/img/static-icon/korzinka-logo.svg" alt="Korzinka Icon">
+                        </div>
+                        <p>Корзина</p>
+                    </div>
+
+                </div>
+
+                <div class="header__profil">
+                    <div class="avatar-box">
+                        <img src="./assets/img/static-icon/avatar.png" alt="profil IMG">
+                    </div>
+                    <p>Алексей</p>
+                    <div class="down-box">
+                        <img src="./assets/img/static-icon/chevron-down.svg" alt="chevron-down">
+                    </div>
+                </div>
+
+            </div>
+        </header>
+
+        <main id="main">
+            <section id="card-product">
+                <div class="container card-product__container">
+                    <div class="card-product__box">
+
+                        <div class="card-product__discount-box cards-box">
+                            <div class="discount__title-box title__box">
+                                <h1 class="discount__title products__titles">
+                                    Акции
+                                </h1>
+                                <a href="./pages/product.html">
+                                    <span>Все продукты</span>
+                                </a>
+                            </div>
+
+                            <div class="discount__product-box product__box">
+                                <ul class="card__product__list">
+
+                                    <li class="card__product__item">
+
+                                        <div class="product__item-img-box">
+                                            <img src="./assets/img/products/1.png" alt="product">
+                                            <span>
+                                                <img src="./assets/img/static-icon/heart-card.svg" alt="">
+                                            </span>
+                                            <p>-50%</p>
+                                        </div>
+
+                                        <div class="product__item__buy-box">
+
+                                            <div class="buy-box">
+                                                <h4>44,50 ₽</h4>
+                                                <span>С картой</span>
+                                            </div>
+
+                                            <div class="buy__nodisc-box">
+                                                <h4>50,50 ₽</h4>
+                                                <span>Обычная</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="product__item__text-box">
+                                            <p>Г/Ц Блинчики с мясом вес, Россия</p>
+                                            <div>
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                            </div>
+                                            <button>
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </li>
+
+                                    <li class="card__product__item">
+                                        <div class="product__item-img-box">
+                                            <img src="./assets/img/products/2.png" alt="product">
+                                            <span>
+                                                <img src="./assets/img/static-icon/heart-card.svg" alt="">
+                                            </span>
+                                            <p>-50%</p>
+                                        </div>
+
+                                        <div class="product__item__buy-box">
+
+                                            <div class="buy-box">
+                                                <h4>44,50 ₽</h4>
+                                                <span>С картой</span>
+                                            </div>
+
+                                            <div class="buy__nodisc-box">
+                                                <h4>50,50 ₽</h4>
+                                                <span>Обычная</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="product__item__text-box">
+                                            <p>Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...</p>
+                                            <div>
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                            </div>
+                                            <button>
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </li>
+
+                                    <li class="card__product__item">
+                                        <div class="product__item-img-box">
+                                            <img src="./assets/img/products/3.png" alt="product">
+                                            <span>
+                                                <img src="./assets/img/static-icon/heart-card.svg" alt="">
+                                            </span>
+                                            <p>-50%</p>
+                                        </div>
+
+                                        <div class="product__item__buy-box">
+
+                                            <div class="buy-box">
+                                                <h4>44,50 ₽</h4>
+                                                <span>С картой</span>
+                                            </div>
+
+                                            <div class="buy__nodisc-box">
+                                                <h4>50,50 ₽</h4>
+                                                <span>Обычная</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="product__item__text-box">
+                                            <p>Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</p>
+                                            <div>
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                            </div>
+                                            <button>
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </li>
+
+                                    <li class="card__product__item">
+                                        <div class="product__item-img-box">
+                                            <img src="./assets/img/products/4.png" alt="product">
+                                            <span>
+                                                <img src="./assets/img/static-icon/heart-card.svg" alt="">
+                                            </span>
+                                            <p>-50%</p>
+                                        </div>
+
+                                        <div class="product__item__buy-box">
+
+                                            <div class="buy-box">
+                                                <h4>44,50 ₽</h4>
+                                                <span>С картой</span>
+                                            </div>
+
+                                            <div class="buy__nodisc-box">
+                                                <h4>50,50 ₽</h4>
+                                                <span>Обычная</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="product__item__text-box">
+                                            <p>Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...</p>
+                                            <div>
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                            </div>
+                                            <button>
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card-product__new-box cards-box">
+                            <div class="new__title-box title__box">
+                                <h1 class="new__title products__titles">
+                                    Новинки
+                                </h1>
+                                <a href="./pages/product.html">
+                                    <span>Все новинки</span>
+                                </a>
+                            </div>
+
+                            <div class="new__product-box product__box">
+                                <ul class="card__product__list">
+
+                                    <li class="card__product__item">
+
+                                        <div class="product__item-img-box">
+                                            <img src="./assets/img/products/5.png" alt="product">
+                                            <span>
+                                                <img src="./assets/img/static-icon/heart-card.svg" alt="">
+                                            </span>
+                                        </div>
+
+                                        <div class="product__item__buy-box">
+                                            <div class="buy-box">
+                                                <h4>599,99 ₽</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="product__item__text-box">
+                                            <p>Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+                                            <div>
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                            </div>
+                                            <button>
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </li>
+
+                                    <li class="card__product__item">
+                                        <div class="product__item-img-box">
+                                            <img src="./assets/img/products/6.png" alt="product">
+                                            <span>
+                                                <img src="./assets/img/static-icon/heart-card.svg" alt="">
+                                            </span>
+                                        </div>
+
+                                        <div class="product__item__buy-box">
+
+                                            <div class="buy-box">
+                                                <h4>44,50 ₽</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="product__item__text-box">
+                                            <p>Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</p>
+                                            <div>
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                            </div>
+                                            <button>
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </li>
+
+                                    <li class="card__product__item">
+                                        <div class="product__item-img-box">
+                                            <img src="./assets/img/products/7.png" alt="product">
+                                            <span>
+                                                <img src="./assets/img/static-icon/heart-card.svg" alt="">
+                                            </span>
+                                        </div>
+
+                                        <div class="product__item__buy-box">
+
+                                            <div class="buy-box">
+                                                <h4>159,99 ₽</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="product__item__text-box">
+                                            <p>Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+                                            <div>
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                            </div>
+                                            <button>
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </li>
+
+                                    <li class="card__product__item">
+                                        <div class="product__item-img-box">
+                                            <img src="./assets/img/products/8.png" alt="product">
+                                            <span>
+                                                <img src="./assets/img/static-icon/heart-card.svg" alt="">
+                                            </span>
+                                        </div>
+
+                                        <div class="product__item__buy-box">
+
+                                            <div class="buy-box">
+                                                <h4>49,39 ₽</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="product__item__text-box">
+                                            <p>Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+                                            <div>
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                            </div>
+                                            <button>
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="card-product__purchased-box cards-box">
+
+                            <div class="purchased__title-box title__box">
+                                <h1 class="purchased__title products__titles">
+                                    Покупали раньше
+                                </h1>
+                                <a href="./pages/product.html">
+                                    <span>Все покупки</span>
+                                </a>
+                            </div>
+
+                            <div class="purchased__product-box product__box">
+                                <ul class="card__product__list">
+
+                                    <li class="card__product__item">
+
+                                        <div class="product__item-img-box">
+                                            <img src="./assets/img/products/9.png" alt="product">
+                                            <span>
+                                                <img src="./assets/img/static-icon/heart-card.svg" alt="">
+                                            </span>
+                                        </div>
+
+                                        <div class="product__item__buy-box">
+                                            <div class="buy-box">
+                                                <h4>599,99 ₽</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="product__item__text-box">
+                                            <p>Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+                                            <div>
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                            </div>
+                                            <button>
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </li>
+
+                                    <li class="card__product__item">
+                                        <div class="product__item-img-box">
+                                            <img src="./assets/img/products/10.png" alt="product">
+                                            <span>
+                                                <img src="./assets/img/static-icon/heart-card.svg" alt="">
+                                            </span>
+                                        </div>
+
+                                        <div class="product__item__buy-box">
+
+                                            <div class="buy-box">
+                                                <h4>44,50 ₽</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="product__item__text-box">
+                                            <p>Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+                                            <div>
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                            </div>
+                                            <button>
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </li>
+
+                                    <li class="card__product__item">
+                                        <div class="product__item-img-box">
+                                            <img src="./assets/img/products/11.png" alt="product">
+                                            <span>
+                                                <img src="./assets/img/static-icon/heart-card.svg" alt="">
+                                            </span>
+                                        </div>
+
+                                        <div class="product__item__buy-box">
+
+                                            <div class="buy-box">
+                                                <h4>159,99 ₽</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="product__item__text-box">
+                                            <p>Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+                                            <div>
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                            </div>
+                                            <button>
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </li>
+
+                                    <li class="card__product__item">
+                                        <div class="product__item-img-box">
+                                            <img src="./assets/img/products/12.png" alt="product">
+                                            <span>
+                                                <img src="./assets/img/static-icon/heart-card.svg" alt="">
+                                            </span>
+                                        </div>
+
+                                        <div class="product__item__buy-box">
+
+                                            <div class="buy-box">
+                                                <h4>49,39 ₽</h4>
+                                            </div>
+                                        </div>
+
+                                        <div class="product__item__text-box">
+                                            <p>Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+                                            <div>
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-stared.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                                <img src="./assets/img/static-icon/products-star.svg" alt="">
+                                            </div>
+                                            <button>
+                                                В корзину
+                                            </button>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="offers">
+                <div class="container offers__container">
+                    <h1 class="offers__title">
+                        Специальные предложения
+                    </h1>
+                    <div class="offers__box">
+                        <ul class="offers__list">
+                            <li class="offers__item">
+                                <div class="offers__item-box offers__text-box">
+                                    <h2>
+                                        Оформите карту «Северяночка»
+                                    </h2>
+                                    <p>
+                                        И получайте бонусы при покупке в магазинах и на сайте
+                                    </p>
+                                </div>
+                                <div class="offers__item-box offers__img-box">
+                                    <img src="./assets/img/static-icon/offers-img-1.png" alt="">
+                                </div>
+                            </li>
+                            <li class="offers__item">
+                                <div class="offers__item-box offers__text-box">
+                                    <h2>
+                                        Покупайте акционные товары
+                                    </h2>
+                                    <p>
+                                        И получайте вдвое больше бонусов
+                                    </p>
+                                </div>
+                                <div class="offers__item-box offers__img-box">
+                                    <img src="./assets/img/static-icon/offers-img-2.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="our__stores">
+                <div class="container our__stores-container">
+                    <h2 class="our__stores-title">
+                        Наши магазины
+                    </h2>
+                    <div class="our__stores__tab-box tab__buttons">
+                        <button class="tab__button">п.Щельяюр</button>
+                        <button class="tab__button">д.Вертеп</button>
+                        <button class="tab__button">с.Краснобор</button>
+                        <button class="tab__button">д.Диюр</button>
+                    </div>
+                    <div class="our__stores__map-box maps__box">
+                        <div class="map__box tab__content">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1048.934235865061!2d69.28688874331631!3d41.34077756600489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b534175ed31%3A0x52a8f9d9414a2ad8!2z0KLQsNGI0LrQtdC90YLRgdC60LjQuSDRg9C90LjQstC10YDRgdC40YLQtdGCINC40L3RhNC-0YDQvNCw0YbQuNC-0L3QvdGL0YUg0YLQtdGF0L3QvtC70L7Qs9C40Lkg0LjQvNC10L3QuCDQnNGD0YXQsNC80LzQsNC00LAg0LDQuy3QpdC-0YDQsNC30LzQuNC5!5e0!3m2!1sru!2s!4v1693123785600!5m2!1sru!2s"
+                                width="100%" height="354" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="map__box tab__content">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1747.9757114530778!2d69.27871335519797!3d41.31142681034576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b2931f41f23%3A0x81095e06b654b845!2z0KHQutCy0LXRgCDQkNC80LjRgNCwINCi0LXQvNGD0YDQsA!5e0!3m2!1sru!2s!4v1693124054389!5m2!1sru!2s"
+                                width="100%" height="354" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="map__box tab__content">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15287.314545169229!2d69.23749129117603!3d41.30663592027398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b40d847941d%3A0x5765a18b352df71e!2sTashkent%20City%20Park!5e0!3m2!1sru!2s!4v1693124108698!5m2!1sru!2s"
+                                width="100%" height="354" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="map__box tab__content">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8573.648645837098!2d69.24523039726097!3d41.300436306112076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bf3870c714d%3A0x6ddece20c220333b!2z0J_QsNGA0Log0YDQsNC30LLQu9C10YfQtdC90LjQuSAiTWFnaWMgQ2l0eSI!5e0!3m2!1sru!2s!4v1693124184583!5m2!1sru!2s"
+                                width="100%" height="354" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="articles">
+                <div class="container articles__container">
+                    <div class="articles__title-box">
+                        <h1 class="articles__title">Статьи</h1>
+                        <a href="./pages/articles.html">
+                            <span>Все статьи</span>
+                        </a>
+                    </div>
+
+                    <ul class="articles__list">
+                        <li class="articles__item">
+                            <div class="articles__item__img-box">
+                                <picture>
+                                    <source media="(max-width:680px)"
+                                        srcset="./assets/img/static-icon/articles-mob-1.png">
+                                    <source media="(max-width:980px)"
+                                        srcset="./assets/img/static-icon/articles-tab-1.png">
+                                    <img src="./assets/img/static-icon/articles-desk-1.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="articles__item-box">
+                                <span>05.03.2021</span>
+                                <h2 class="articles__item__title">
+                                    Режим использования масок и перчаток на территории магазинов
+                                </h2>
+                                <p class="articles__item__text">
+                                    Подробная информация о режимах использования масок и перчаток на территории
+                                    магазинов "ЛЕНТА". Информация обновляется каждый будний день.
+                                </p>
+                                <button class="articlesa__item__btn">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </li>
+                        <li class="articles__item">
+                            <div class="articles__item__img-box">
+                                <picture>
+                                    <source media="(max-width:680px)"
+                                        srcset="./assets/img/static-icon/articles-mob-2.png">
+                                    <source media="(max-width:980px)"
+                                        srcset="./assets/img/static-icon/articles-tab-2.png">
+                                    <img src="./assets/img/static-icon/articles-desk-2.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="articles__item-box">
+                                <span>05.03.2021</span>
+                                <h2 class="articles__item__title">
+                                    Весеннее настроение для каждой
+                                </h2>
+                                <p class="articles__item__text">
+                                    8 Марта – это не просто Международный женский день, это ещё день тюльпанов, приятных
+                                    сюрпризов и праздничных тёплых пожеланий.
+                                </p>
+                                <button class="articlesa__item__btn">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </li>
+                        <li class="articles__item">
+                            <div class="articles__item__img-box">
+                                <picture>
+                                    <source media="(max-width:680px)"
+                                        srcset="./assets/img/static-icon/articles-mob-3.png">
+                                    <source media="(max-width:980px)"
+                                        srcset="./assets/img/static-icon/articles-tab-3.png">
+                                    <img src="./assets/img/static-icon/articles-desk-3.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="articles__item-box">
+                                <span>22.02.2020</span>
+                                <h2 class="articles__item__title">
+                                    ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!
+                                </h2>
+                                <p class="articles__item__text">
+                                    Голосуйте за любимые категории, выбирайте категорию-победителя в мобильном
+                                    приложении и получайте кешбэк 10% баллами в апреле!
+                                </p>
+                                <button class="articlesa__item__btn">
+                                    Подробнее
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </section>
+
+        </main>
     </div>
-    <footer></footer>
+
+    <footer>
+        <div class="container footer__container">
+            <div class="footer__box">
+
+                <div class="footer__box-one">
+                    <div class="footer__logo-box">
+                        <a href="#">
+                            <img src="./assets/img/static-icon/site-logo-footer.svg" alt="Site logo">
+                        </a>
+                    </div>
+
+                    <div>
+                        <ul class="footer__link-list">
+                            <li class="footer__link-item">
+                                <a href="">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="footer__link-item">
+                                <a href="">
+                                    Контакты
+                                </a>
+                            </li>
+                            <li class="footer__link-item">
+                                <a href="">
+                                    Вакансии
+                                </a>
+                            </li>
+                            <li class="footer__link-item">
+                                <a href="">
+                                    Статьи
+                                </a>
+                            </li>
+                            <li class="footer__link-item">
+                                <a href="">
+                                    Политика обработки персональных данных
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__box-two">
+                    <div class="footer__social__link-box">
+                        <ul class="social__link-list">
+                            <li class="social__link-item">
+                                <a href="">
+                                    <img src="./assets/img/static-icon/footer-instagram.svg"
+                                        alt="Social media instagram">
+                                </a>
+                            </li>
+                            <li class="social__link-item">
+                                <a href="">
+                                    <img src="./assets/img/static-icon/footer-vkontakte.svg"
+                                        alt="Social media vKontakte">
+                                </a>
+                            </li>
+                            <li class="social__link-item">
+                                <a href="">
+                                    <img src="./assets/img/static-icon/footer-facebook.svg" alt="Social media Facebook">
+                                </a>
+                            </li>
+                            <li class="social__link-item">
+                                <a href="">
+                                    <img src="./assets/img/static-icon/footer-ok.svg" alt="Social media OK">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__telephone-box">
+                        <div>
+                            <a href="#" "tel: 8 800 777 33 33">
+                                <img src="./assets/img/static-icon/footer-phone-icon.svg" alt="">
+                                <span>8 800 777 33 33</span>
+                            </a>
+                        </div>
+                        <div>
+                            <p>Дизайн</p>
+                            <img src="./assets/img/static-icon/footer-dizayn-logo.svg" alt="Dizayn company logo">
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div style="display: none; justify-content: space-between;">
+
+                <div class="header__navigation" style="display: block; display: flex; justify-content: space-between;">
+                    <div class="header__heart-box">
+                        <div class="heart__icon-box">
+                            <img src="./assets/img/static-icon/heart-logo.svg" alt="Heart Icon">
+                        </div>
+                        <p>Избранное</p>
+                    </div>
+
+                    <div class="header__box-box">
+                        <div class="box__icon-box">
+                            <img src="./assets/img/static-icon/box-logo.svg" alt="Box Icon">
+                        </div>
+                        <p>продукты</p>
+                    </div>
+
+                    <div class="header__korzinka-box">
+                        <div class="korzinka__icon-box">
+                            <img src="./assets/img/static-icon/korzinka-logo.svg" alt="Korzinka Icon">
+                        </div>
+                        <p>Корзина</p>
+                    </div>
+
+                </div>
+
+                <div class="header__profil" style="display: block; display: flex; ">
+                    <div class="avatar-box">
+                        <img src="./assets/img/static-icon/avatar.png" alt="profil IMG">
+                    </div>
+                    <p>Алексей</p>
+                    <div class="down-box">
+                        <img src="./assets/img/static-icon/chevron-down.svg" alt="chevron-down">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./js/our-stores.js"></script>
+
 </body>
 
 </html>

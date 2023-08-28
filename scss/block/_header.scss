@@ -1,0 +1,144 @@
+//Header
+#header{
+  padding: 16px 0px;
+  border-bottom: 2px solid #FBF8EC;
+}
+
+.header__container{
+  display: flex;
+  align-items: center;
+}
+
+
+//Header logo
+.header__logo-box{
+  margin-right: 40px;
+}
+
+
+//Header BUTTON
+.header__button{
+  padding: 8px;
+  background-color: #70C05B;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header__button p{
+  display: inline;
+  padding: 0px 18px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+@media only screen and (max-width: 1000px){
+  .header__button p{
+    display: none
+  }
+}
+
+
+//Header SEARCH
+.header__search-box{
+  margin-left: 16px;
+  margin-right: 40px;
+  flex-grow: 1;
+}
+.header__search-form{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border: 1px solid #70C05B;
+  border-radius: 4px;
+}
+
+.header__search-form input{
+  outline: none;
+  border: none;
+  width: 180px;
+  padding: 0px 8px;
+}
+
+.header__search-form img, 
+.heart__icon-box img, 
+.box__icon-box img, 
+.korzinka__icon-box img {
+  width: 24px;
+  height: 24px;
+}
+
+
+//HEADER NAVIGATION
+.header__navigation{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-right: 24px;
+}
+
+.header__heart-box, 
+.header__box-box, 
+.header__korzinka-box {
+  text-align: center;
+  gap: 8px;
+}
+
+.header__heart-box p, 
+.header__box-box p, 
+.header__korzinka-box p{
+  font-size: 12px;
+}
+
+
+//Header HEART
+
+
+//HEADER PROFIL
+.header__profil{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+}
+
+.avatar-box img{
+  width: 40px;
+  height: 40px;
+}
+
+.down-box img{
+  padding: 8px;
+}
+
+.header__profil p{
+  width: 85px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+@media only screen and (max-width: 1000px){
+  .header__button p, .down-box, .header__profil p{
+    display: none
+  }
+  .header__search-box {
+    margin-left: 16px;
+    margin-right: 20px;
+  }
+
+}
+@media only screen and (max-width: 760px){
+  .header__button-box, .header__navigation, .header__profil{
+    display: none;
+  }
+  .header__search-form input{
+    width: 150px;
+  }
+  .header__search-box {
+    margin-left: 24px;
+    margin-right: 0px;
+  }
+}

@@ -1,0 +1,75 @@
+#our__stores{
+  margin-bottom: 120px;
+}
+
+.our__stores-title{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 40px;
+  color: #414141;
+}
+
+.tab__buttons{
+  margin-bottom: 24px;
+}
+
+.tab__button{
+  background-color: transparent;
+  background-color: #F3F2F1;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  border-radius: 4px;
+  padding: 8px;
+  color: #606060;
+  border: none;
+  &:nth-child(1), &:nth-child(2), &:nth-child(3){
+    margin-right: 24px;
+  }
+}
+
+.active__button{
+  background-color: #70C05B;
+  color: #FFFFFF;
+}
+
+/*   MEDIA  TABLET    */
+
+@media screen and (max-width: 980px) {
+
+  #our__stores{
+    margin-bottom: 104px;
+  }
+  
+
+  .our__stores-title{
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  .tab__button{
+    &:nth-child(1), &:nth-child(2), &:nth-child(3){
+      margin-right: 16px;
+    }
+  }
+}
+
+
+/*   MEDIA  MOBILE    */
+
+@media screen and (max-width: 650px) {
+  #our__stores{
+    margin-bottom: 80px;
+  }
+  
+}
+
+@media screen and (max-width: 386px){
+  .tab__button{
+    &:nth-child(4){
+      margin-top: 8px;
+    }
+  }
+
+}

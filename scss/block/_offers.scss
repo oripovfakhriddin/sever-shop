@@ -1,0 +1,81 @@
+#offers{
+  margin-bottom: 120px;
+}
+
+.offers__title{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 40px;
+  color: #414141;
+}
+
+
+.offers__list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.offers__item{
+  display: flex;
+  max-width: 584px;
+  gap: 22px;
+  align-items: center;
+  border-radius: 4px;
+  padding: 10px 40px;
+  
+}
+
+.offers__item:nth-child(1){
+  
+  background-color: #FCD5BA;
+  box-shadow: 0px 8px 16px 0px rgba(202, 147, 96, 0.50);
+  img{
+    height: 150px;
+  }
+}
+
+.offers__item:nth-child(2){
+  
+  background-color: #E5FFDE;
+  box-shadow: 0px 8px 16px 0px rgba(123, 214, 90, 0.5);
+  img{
+    height: 150px;
+    width: 222px;
+  }
+}
+
+.offers__item-box{
+  
+  max-width: 260px;
+}
+
+.offers__item-box h2{
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.offers__item-box p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+
+
+
+/*   MEDIA  TABLET    */
+
+@media screen and (max-width: 1000px) {
+  .offers__item:nth-child(1){
+    padding-right: 0px;
+  }
+}
+
+
+
+
+/*   MEDIA  MOBILE    */
