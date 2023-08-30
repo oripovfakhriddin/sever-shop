@@ -20,11 +20,14 @@
 .header__button{
   padding: 8px;
   background-color: #70C05B;
-  border: none;
   border-radius: 4px;
   display: flex;
   align-items: center;
   gap: 8px;
+  button{
+    border: none;
+    background-color: transparent;
+  }
 }
 .header__button p{
   display: inline;
@@ -33,6 +36,21 @@
   font-weight: 400;
   line-height: 150%;
 }
+
+.d__none{
+  display: none;
+}
+
+.categorii__container{
+  position: relative;
+}
+
+.dropdown{
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 @media only screen and (max-width: 1000px){
   .header__button p{
     display: none
